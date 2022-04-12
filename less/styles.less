@@ -1,0 +1,43 @@
+@import './article.less';
+@import './sign-up.less';
+@import './header.less';
+@import './footer.less';
+
+@color-default: #626262;
+
+.font-mixin {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: @color-default;
+}
+
+p, h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    margin: 0;
+
+    &__content-container {
+        width: 900px;
+        margin: 90px auto 130px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.insert {
+    .font-mixin();
+    width: 164px;
+    font-size: 24px;
+    text-align: center;
+    padding: 13px 0px;
+    border: 1px solid @color-default;
+    margin: 125px auto;
+}

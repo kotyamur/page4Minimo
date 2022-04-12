@@ -1,0 +1,51 @@
+.article {
+    .font-mixin();
+
+    // &__image {
+
+    // }
+
+    &__type {
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 14px;
+        color: #b4ad9e;
+        text-transform: uppercase;
+        padding-top: 25px;
+    }
+
+    &__heading {
+        font-size: 30px;
+        color: @color-default;
+        padding: 20px 0 25px 0;
+    }
+
+    // &__content {
+
+    // }
+
+    // &__comment {
+
+    // }
+
+    &__leave-comment-wrapper {
+        margin-top: 40px;
+    }
+
+    &__leave-comment {
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+        color: #b4ad9e;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-top: 40px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &_half {
+        width: 420px;
+    }
+}

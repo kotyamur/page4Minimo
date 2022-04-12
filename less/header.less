@@ -1,0 +1,30 @@
+.header {
+    .font-mixin();
+    width: 1060px;
+    margin: 0 auto;
+
+    &__cap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 165px;
+    }
+
+    &__logo {
+        font-size: 30px;
+        color: #000000;
+        text-transform: uppercase;
+        font-family: 'Inconsolata', monospace;
+        letter-spacing: 0.2em;
+        font-weight: normal;
+    }
+
+    &__navigation {
+        width: 570px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        text-transform: uppercase;
+        list-style-type: none;
+    }
+}
